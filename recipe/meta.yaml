@@ -9,6 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/justpy-{{ version }}.tar.gz
   sha256: 2eb6ffbc69706665f002649c59b26abb66e50005bfbbe00ceefa889a1c26c7b6
 
+
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
