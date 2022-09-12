@@ -1,5 +1,5 @@
 {% set name = "justpy" %}
-{% set version = "0.5.6" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/justpy-{{ version }}.tar.gz
-  sha256: 822d36528a0203e07594e7fcd64b51e5057f90fccd4e987e35a2c083fe6bc0a2
+  sha256: 61ff4233856a8a5b79d6aea99ebe00b12721d250f1544f941663b39a67247380
 
 
 build:
@@ -17,13 +17,13 @@ build:
 
 requirements:
   host:
-    - flit >=3.2,<4
+    - hatchling
     - pip
     - python >=3.7
   run:
     - addict >=2.4.0
     - aiofiles
-    - demjson3 >=3.0.5
+    - hjson-py >=3.1.0
     - httpx >=0.23.0
     - itsdangerous >=2.1.2
     - jinja2 >=3.1.2
@@ -41,6 +41,13 @@ test:
     - pip check
   requires:
     - pip
+    - aiohttp
+    - asynctest
+    - green
+    - psutil
+    - selenium
+    - testfixtures
+    - webdriver-manager
 
 about:
   home: https://justpy.io
