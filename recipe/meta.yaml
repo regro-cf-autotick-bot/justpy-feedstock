@@ -41,6 +41,13 @@ test:
     - pip check
   requires:
     - pip
+    - aiohttp
+    - asynctest
+    - green
+    - psutil
+    - selenium
+    - testfixtures
+    - webdriver-manager
 
 about:
   home: https://justpy.io
