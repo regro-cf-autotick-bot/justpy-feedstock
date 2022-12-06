@@ -1,5 +1,5 @@
 {% set name = "justpy" %}
-{% set version = "0.11.4" %}
+{% set version = "0.11.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/justpy-{{ version }}.tar.gz
-  sha256: 1c040368bcbe716309fd32672bc3d6055d652e1b001f8b6882ecd848a71444e6
+  sha256: fc142265217ec4d0fdc0641f534cbce57b6663803ac3c7214347e277b5cb676a
 
 
 build:
