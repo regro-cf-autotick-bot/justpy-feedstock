@@ -1,5 +1,5 @@
 {% set name = "justpy" %}
-{% set version = "0.12.2" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/justpy-{{ version }}.tar.gz
-  sha256: 750e32b0d29fb8420fbc1fef0a9c288167c7fe283efa559166f43efbc03561f5
+  sha256: 90521b8f8b146bcb675e4b6870d40a37278cad40635414aace5af9a1b7c093ae
 
 
 build:
@@ -23,6 +23,7 @@ requirements:
   run:
     - addict >=2.4.0
     - aiofiles
+    - fastapi
     - hjson-py >=3.1.0
     - httpx >=0.23.0
     - itsdangerous >=2.1.2
