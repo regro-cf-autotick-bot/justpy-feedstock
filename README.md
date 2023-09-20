@@ -1,11 +1,11 @@
-About justpy
-============
+About justpy-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/justpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://justpy.io
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/justpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: JustPy is an object-oriented, component based, high-level Python Web Framework that requires no front-end programming
 
