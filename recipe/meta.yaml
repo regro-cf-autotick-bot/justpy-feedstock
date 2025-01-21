@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/justpy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/justpy-{{ version }}.tar.gz
   sha256: bfaf78fd4ae51be24f02150a5d54cb04e34b5569b651db69e15588f165584ee1
 
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - hatchling
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - addict >=2.4.0
     - aiofiles
@@ -29,7 +29,7 @@ requirements:
     - itsdangerous >=2.1.2
     - jinja2 >=3.1.2
     - psutil >=5.9.2
-    - python >=3.8
+    - python >={{ python_min }}
     - starlette >=0.20.4
     - twine
     - uvicorn >=0.18.3
@@ -50,6 +50,7 @@ test:
     - selenium
     - testfixtures
     - webdriver-manager
+    - python {{ python_min }}
 
 about:
   home: https://justpy.io
